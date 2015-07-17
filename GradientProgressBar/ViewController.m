@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "GradientProgress.h"
 
-#define _TOTAL_COUNT 8
+#define _TOTAL_COUNT 10
 #define _PROGRESS_COUNT 3
 
 
@@ -28,7 +28,7 @@
     
     // Custom gradient progress bar
     progress = [[GradientProgress alloc] init];
-    progress.isPercentage = YES;
+    progress.isPercentage = NO;
     [progress drawProgressWithTotalCount:_TOTAL_COUNT andprogressCount:_PROGRESS_COUNT withRect:CGRectMake(50.0f, 200.0f, 270.0f, 40.0f) inView:self.view];
 
 }
